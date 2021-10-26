@@ -1,11 +1,16 @@
 
 -- undecorated coloured glass, all using plain glass texture
 local glass_list = {
-	{"black", "Darkened", "292421",}, {"blue", "Blue", "0000FF",},
-	{"cyan", "Cyan", "00FFFF",}, {"green", "Green", "00FF00",}, 
-	{"magenta", "Magenta", "FF00FF",}, {"orange", "Orange", "FF6103",}, 
-	{"purple", "Purple", "800080",}, {"red", "Red", "FF0000",}, 
-	{"yellow", "Yellow", "FFFF00",}, {"frosted", "Frosted", "FFFFFF",}
+	{"black", "Darkened", "292421",},
+    {"blue", "Blue", "0000FF",},
+	{"cyan", "Cyan", "00FFFF",},
+    {"green", "Green", "00FF00",}, 
+	{"magenta", "Magenta", "FF00FF",},
+    {"orange", "Orange", "FF6103",}, 
+	{"purple", "Purple", "800080",},
+    {"red", "Red", "FF0000",}, 
+	{"yellow", "Yellow", "FFFF00",},
+    {"frosted", "Frosted", "FFFFFF",}
 }
 
 for i in ipairs(glass_list) do
@@ -19,7 +24,7 @@ for i in ipairs(glass_list) do
 		groups = {cracky = 3},
 		use_texture_alpha = true,
 		sunlight_propagates = true,
-		light_source = 4,
+		light_source = 2,
 		drawtype = "glasslike",
 		paramtype = "light",
 		sounds = default.node_sound_glass_defaults(),
@@ -59,7 +64,7 @@ for i in ipairs(light_list) do
 		groups = {cracky = 3},
 		use_texture_alpha = true,
 		sunlight_propagates = true,
-		light_source = 14,
+		light_source = 2,
 		drawtype = "glasslike",
 		paramtype = "light",
 		sounds = default.node_sound_glass_defaults(),
@@ -89,7 +94,7 @@ for i in ipairs(pattern_list) do
 		groups = {cracky = 3},
 		use_texture_alpha = true,
 		sunlight_propagates = true,
-		light_source = 5,
+		light_source = 2,
 		drawtype = "glasslike",
 		paramtype = "light",
 		paramtype2 = "facedir",
@@ -196,7 +201,7 @@ minetest.register_node("abriglass:ghost_crystal", {
 	groups = {cracky = 3},
 	use_texture_alpha = true,
 	sunlight_propagates = true,
-	light_source = 14,
+	light_source = 2,
 	drawtype = "glasslike",
 	paramtype = "light",
 	sounds = default.node_sound_glass_defaults(),
@@ -211,7 +216,7 @@ minetest.register_node("abriglass:hidden_light", {
 	use_texture_alpha = true,
 	sunlight_propagates = true,
 	walkable = false,
-	light_source = 7,
+	light_source = 2,
 	drawtype = "glasslike",
 	paramtype = "light",
 })
